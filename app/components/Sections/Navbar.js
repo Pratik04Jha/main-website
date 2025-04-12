@@ -22,23 +22,20 @@ const Navbar = () => {
 
           {/* Nav Links (visible only on medium and above) */}
           <div className="hidden md:flex gap-1">
-            <Link href="/" className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg">
-              Products
-            </Link>
-            <Link href="/" className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg">
-              About
-            </Link>
-            <Link href="/" className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg">
-              Contact
-            </Link>
-            <Link href="/" className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg">
-              Blogs
-            </Link>
+            {["Products", "About", "Contact", "Blogs"].map((item) => (
+              <Link
+                key={item}
+                href="/"
+                className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg"
+              >
+                {item}
+              </Link>
+            ))}
           </div>
         </div>
 
-        {/* Right Side: Auth Buttons */}
-        <div className="flex items-center gap-2 mt-2 md:mt-0">
+        {/* Right Side: Desktop Auth Buttons (only on md+) */}
+        <div className="hidden md:flex items-center gap-2">
           <button className="bg-black rounded-lg py-1 px-4 text-white border border-white/20 font-semibold text-sm md:text-base">
             Log in
           </button>
@@ -47,7 +44,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger Menu Button */}
+        {/* Hamburger Menu Button (only on mobile) */}
         <button
           className="md:hidden text-white text-2xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -59,18 +56,17 @@ const Navbar = () => {
       {/* Mobile Menu (Visible when state is true) */}
       {isMobileMenuOpen && (
         <div className="md:hidden w-full flex flex-col items-center bg-[rgba(0,0,0,0.7)] py-3">
-          <Link href="/" className="py-2 px-3 text-white hover:bg-zinc-900/90 rounded-lg">
-            Products
-          </Link>
-          <Link href="/" className="py-2 px-3 text-white hover:bg-zinc-900/90 rounded-lg">
-            About
-          </Link>
-          <Link href="/" className="py-2 px-3 text-white hover:bg-zinc-900/90 rounded-lg">
-            Contact
-          </Link>
-          <Link href="/" className="py-2 px-3 text-white hover:bg-zinc-900/90 rounded-lg">
-            Blogs
-          </Link>
+          {["Products", "About", "Contact", "Blogs"].map((item) => (
+            <Link
+              key={item}
+              href="/"
+              className="py-2 px-3 text-white hover:bg-zinc-900/90 rounded-lg"
+            >
+              {item}
+            </Link>
+          ))}
+
+          {/* Mobile Auth Buttons */}
           <div className="flex flex-col items-center gap-3 mt-4">
             <button className="bg-black rounded-lg py-1 px-4 text-white border border-white/20 font-semibold text-sm">
               Log in
