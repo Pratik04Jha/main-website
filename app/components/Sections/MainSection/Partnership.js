@@ -3,7 +3,7 @@ import React from "react";
 const Partnership = () => {
   return (
     <div className="flex items-center flex-col gap-5 w-full my-60">
-      <h1 className="text-6xl sm:text-7xl font-bold">Partnerships</h1>
+      <h1 className="text-5xl sm:text-7xl font-bold">Partnerships</h1>
       <p>There are currently no partners</p>
       <div className="relative p-[3px] rounded-xl overflow-hidden">
         <div className="absolute -inset-100 z-0 rounded-xl bg-[conic-gradient(from_0deg,red,orange,yellow,green,cyan,blue,violet,red)] animate-spin-slow" />
