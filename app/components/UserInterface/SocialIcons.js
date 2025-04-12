@@ -13,15 +13,15 @@ const SocialIcons = ({ data }) => {
     >
       {/* Tooltip */}
       <div
-        className={`absolute -top-12 bg-zinc-800 text-white text-sm px-3 py-1 rounded-md 
-        shadow-lg z-10 transition-all duration-300 ease-out transform 
-        ${hovered ? "opacity-100 scale-100" : "opacity-0 scale-90"} 
-        animate-bounce-in`}
-      >
-        {data.title}
-        {/* Tooltip triangle */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-zinc-800" />
-      </div>
+  className={`absolute -top-10 sm:-top-12 bg-zinc-800 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-md 
+    shadow-lg z-10 transition-all duration-300 ease-out transform 
+    ${hovered ? "opacity-100 scale-100" : "opacity-0 scale-90"} 
+    animate-bounce-in`}
+>
+  {data.title}
+  <div className="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-zinc-800" />
+</div>
+
 
       {/* Actual Icon Link */}
       <Link

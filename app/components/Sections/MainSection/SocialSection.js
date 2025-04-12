@@ -45,9 +45,8 @@ const SocialSection = () => {
   ];
   return (
     <>
-
-      <div className="flex flex-col items-center my-40 gap-5 relative">
-      <div className="bg-pink-500/70 blur-[140px] h-50 w-50 rounded-full rotate-20 absolute -top-[00%] z-0 left-[10%] -translate-1/2  " />
+      <div className="flex flex-col items-center my-40 gap-5 px-4 sm:px-10 relative">
+        <div className="bg-pink-500/70 blur-[140px] h-50 w-50 rounded-full rotate-20 absolute -top-[00%] z-0 left-[10%] -translate-1/2" />
         <svg
           className="absolute inset-0 -top-50 w-full h-full opacity-100 -z-1"
           xmlns="http://www.w3.org/2000/svg"
@@ -76,19 +75,24 @@ const SocialSection = () => {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
 
+        {/* Discord Icon and Title */}
         <div className="flex flex-col items-center w-full">
-          <FaDiscord size={100} className="text-white" />
-          <h1 className="text-6xl font-bold text-center w-1/2">
+          <FaDiscord size={60} className="text-white sm:size-30" />
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-center w-full sm:w-3/4 px-2">
             Ready to join our friendly{" "}
             <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
               community?
             </span>
           </h1>
         </div>
-        <p className="text-xl w-1/2 text-center">
+
+        {/* Subtitle Text */}
+        <p className="text-base sm:text-lg md:text-xl w-full sm:w-2/3 text-center px-4">
           Join our vibrant Discord community! Connect, share, and grow with
           like-minded enthusiasts. Click to dive in!
         </p>
+
+        {/* Call to Action Button */}
         <div className="relative group w-fit mx-auto my-4 rounded-[100px]">
           <div className="relative p-[5px] px-[10px] rounded-[100px] overflow-hidden">
             <div className="absolute -inset-100 z-0 rounded-[100px] bg-[conic-gradient(from_0deg,red,orange,yellow,green,cyan,blue,violet,red)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-spin-slow pointer-events-none" />
@@ -99,12 +103,12 @@ const SocialSection = () => {
             </button>
           </div>
         </div>
-        <div>
-          <div className="flex justify-center lg:justify-end gap-8 my-10">
-            {data.map((items, index) => (
-              <SocialIcons key={index} data={items} />
-            ))}
-          </div>
+
+        {/* Social Icons */}
+        <div className="flex flex-wrap justify-center gap-6 my-10">
+          {data.map((items, index) => (
+            <SocialIcons key={index} data={items} />
+          ))}
         </div>
       </div>
     </>

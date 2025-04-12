@@ -3,34 +3,17 @@ import Products from "../../UserInterface/Products";
 
 const ProductSection = () => {
   const productData = [
-    {
-      title: "Portfolio website",
-      imgSrc: "/Project/portfolio.png",
-    },
-    {
-      title: "Redisigning",
-      imgSrc: "/Project/redisigning.png",
-    },
-    {
-      title: "Artificial intelligence",
-      imgSrc: "/Project/ai.png",
-    },
-    {
-      title: "Productivity app",
-      imgSrc: "/Project/productivity.png",
-    },
-    {
-      title: "Game arcade",
-      imgSrc: "/Project/arcade.png",
-    },
-    {
-      title: "Time management",
-      imgSrc: "/Project/time.png",
-    },
+    { title: "Portfolio website", imgSrc: "/Project/portfolio.png" },
+    { title: "Redisigning", imgSrc: "/Project/redisigning.png" },
+    { title: "Artificial intelligence", imgSrc: "/Project/ai.png" },
+    { title: "Productivity app", imgSrc: "/Project/productivity.png" },
+    { title: "Game arcade", imgSrc: "/Project/arcade.png" },
+    { title: "Time management", imgSrc: "/Project/time.png" },
   ];
+
   return (
-    <div className="flex flex-col justify-between items-center">
-      <div className="flex flex-wrap justify-center gap-4 m-auto my-10">
+    <div className="flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-wrap justify-center gap-6 my-10">
         {productData.map((items, index) => (
           <Products key={index} productData={items} />
         ))}
