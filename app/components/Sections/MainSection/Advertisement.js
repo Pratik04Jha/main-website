@@ -23,8 +23,8 @@ const Advertisement = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center my-10 gap-4 h-[150vh]">
-      <h1 className="text-7xl font-bold">Advertisements</h1>
+    <div className="flex flex-col items-center my-10 gap-4 sm:h-[150vh] h-[260vh]">
+      <h1 className="text-6xl sm:7xl font-bold">Advertisements</h1>
       <p className="text-center leading-6 text-xl">
         There is no advertisements yet, be the first one <br /> Contact us to get
         Advertise
