@@ -1,9 +1,12 @@
 import React from "react";
 
 const LandingPage = () => {
+  
   return (
     <div className="relative flex justify-center items-center flex-col h-screen overflow-hidden bg-black text-white px-4 sm:px-6 md:px-12">
       {/* Grid SVG Background */}
+      {/* <div className="bg-pink-500/50 pointer-events-none blur-[200px] h-80 w-80 rounded-full rotate-20 absolute top-[20%] left-[10%] -translate-1/2 z-1000000000 " /> */}
+
       <svg
         className="absolute inset-0 w-full h-full opacity-100 z-0"
         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +35,6 @@ const LandingPage = () => {
         <rect width="100%" height="100%" fill="url(#grid)" />
       </svg>
 
-      {/* Content */}
       <div className="relative z-10 text-center flex flex-col items-center">
         <h1 className="masked text-4xl sm:text-5xl md:text-7xl font-bold">
           Zenius
@@ -56,7 +58,23 @@ const LandingPage = () => {
             </button>
           </div>
         </div>
+        <div className="flex justify-center items-center gap-20 absolute -bottom-25">
+          <div>
+            <h1 className="text-3xl font-[700]">1</h1>
+            <h1 className="text-[20px]">Team members</h1>
+          </div>
+          <div>
+            <h1 className="text-3xl font-[700]">6+</h1>
+            <h1 className="text-[20px]">Tools created</h1>
+          </div>
+          <div>
+            <h1 className="text-3xl font-[700]">10M+</h1>
+            <h1 className="text-[20px]">Total users</h1>
+          </div>
+        </div>
       </div>
+
+
     </div>
   );
 };

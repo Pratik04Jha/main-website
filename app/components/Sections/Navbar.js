@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -8,8 +8,6 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[rgba(0,0,0,0.7)] backdrop-blur-2xl">
       <div className="px-4 sm:px-6 lg:px-8 flex items-center justify-between h-10 md:h-14">
-        
-        {/* Left Side: Logo + Links */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center gap-1">
             <img
@@ -20,21 +18,24 @@ const Navbar = () => {
             <p className="font-semibold text-[17px]">Zenius</p>
           </Link>
 
-          {/* Nav Links (visible only on medium and above) */}
           <div className="hidden md:flex gap-1">
-            {["Products", "About", "Contact", "Blogs"].map((item) => (
+            {[
+              { title: "Products", href: "/Links/Products" },
+              { title: "About", href: "/Links/About" },
+              { title: "Contact", href: "/Links/Contact" },
+              { title: "Blogs", href: "/Links/Blogs" },
+            ].map((item, index) => (
               <Link
-                key={item}
-                href="/"
+                key={index}
+                href={item.href}
                 className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg"
               >
-                {item}
+                {item.title}
               </Link>
             ))}
           </div>
         </div>
 
-        {/* Right Side: Desktop Auth Buttons (only on md+) */}
         <div className="hidden md:flex items-center gap-2">
           <button className="bg-black rounded-lg py-1 px-4 text-white border border-white/20 font-semibold text-sm md:text-base">
             Log in
@@ -44,7 +45,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Hamburger Menu Button (only on mobile) */}
         <button
           className="md:hidden text-white text-2xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -66,7 +66,6 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Mobile Auth Buttons */}
           <div className="flex flex-col items-center gap-3 mt-4">
             <button className="bg-black rounded-lg py-1 px-4 text-white border border-white/20 font-semibold text-sm">
               Log in

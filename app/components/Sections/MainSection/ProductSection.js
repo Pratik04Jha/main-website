@@ -1,5 +1,6 @@
 import React from "react";
 import Products from "../../UserInterface/Products";
+import Link from "next/link";
 
 const ProductSection = () => {
   const productData = [
@@ -19,9 +20,11 @@ const ProductSection = () => {
         ))}
       </div>
       <div>
-        <button className="bg-white text-black font-semibold py-1 px-4 rounded-lg cursor-pointer hover:bg-white/90">
-          See all products
-        </button>
+        <Link href="/Links/Products">
+          <button className="bg-white text-black font-semibold py-1 px-4 rounded-lg cursor-pointer hover:bg-white/90">
+            See all products
+          </button>
+        </Link>
       </div>
     </div>
   );

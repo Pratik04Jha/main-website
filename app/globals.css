@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+::-webkit-scrollbar{
+  height: 0;
+  width: 1px;
+}
+
 .masked {
   position: relative;
   color: transparent;
@@ -100,3 +105,47 @@
 .animate-rainbow-stripe {
   animation: rainbow-stripe 10s linear infinite;
 }
+
+
+.love {
+  position: relative;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url("https://plus.unsplash.com/premium_photo-1671019820494-3af97f91c47c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  text-shadow: 0 0 40px rgba(255, 0, 255, 0.5);
+}
+
+.socialHover{
+  position: relative;
+}
+
+.socialHover::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.socialHover:hover::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 2;
+  background-color: white;
+}
+
+

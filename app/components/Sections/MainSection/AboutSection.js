@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className="flex flex-col items-center gap-5 relative">
       <h1 className="text-6xl font-bold text-center w-[70%] sm:w-full">
         <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
           Learn
@@ -19,6 +19,7 @@ const AboutSection = () => {
       <button className="bg-white text-black font-semibold py-1 px-4 rounded-lg cursor-pointer hover:bg-white/90">
         Learn more
       </button>
+      <div className="bg-pink-500/70 blur-[200px] h-50 w-50 rounded-full rotate-20 absolute top-[100%] z-0 right-[5%] -translate-1/2  " />
 
       <h1 className="sm:text-[100px] leading-14 sm:leading-25 font-semibold text-center sm:w-[50%] w-full mt-40 text-[60px]">
         We do what we are{" "}

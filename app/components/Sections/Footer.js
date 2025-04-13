@@ -55,22 +55,22 @@ const Footer = () => {
             </h1>
             <ul className="text-sm text-white/80 space-y-1">
               <li>
-                <Link href="/Home" className="hover:underline">
+                <Link href="/Home" className="hover:text-white ease-in-out duration-100">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/Explore" className="hover:underline">
+                <Link href="/Explore" className="hover:text-white ease-in-out duration-100">
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/About" className="hover:underline">
+                <Link href="/About" className="hover:text-white ease-in-out duration-100">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/About" className="hover:underline">
+                <Link href="/About" className="hover:text-white ease-in-out duration-100">
                   Blogs
                 </Link>
               </li>
@@ -83,12 +83,12 @@ const Footer = () => {
             </h1>
             <ul className="text-sm text-white/80 space-y-1">
               <li>
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:text-white ease-in-out duration-100">
                   Privacy policy
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:underline">
+                <Link href="/" className="hover:text-white ease-in-out duration-100">
                   Terms of use
                 </Link>
               </li>
@@ -102,14 +102,14 @@ const Footer = () => {
             </h1>
             <ul className="text-sm text-white/80 space-y-1">
               <li>
-                <Link href="" className="hover:underline" target="_blank">
+                <Link href="" className="hover:text-white ease-in-out duration-100" target="_blank">
                   Main Website
                 </Link>
               </li>
               <li>
                 <Link
                   href="https://pratik-the-legend.vercel.app/"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                   target="_blank"
                 >
                   Portfolio Website
@@ -118,29 +118,29 @@ const Footer = () => {
               <li>
                 <Link
                   href="https://arcade-zeta.vercel.app/"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                   target="_blank"
                 >
                   Game Arcade
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:underline" target="_blank">
+                <Link href="/" className="hover:text-white ease-in-out duration-100" target="_blank">
                   Artificial Intelligence
                 </Link>
               </li>
               <li>
-                <Link href="" className="hover:underline" target="_blank">
+                <Link href="" className="hover:text-white ease-in-out duration-100" target="_blank">
                   Blog | Article | Thoughts
                 </Link>
               </li>
               <li>
-                <Link href="" className="hover:underline" target="_blank">
+                <Link href="" className="hover:text-white ease-in-out duration-100" target="_blank">
                   Productivity App
                 </Link>
               </li>
               <li>
-                <Link href="" className="hover:underline" target="_blank">
+                <Link href="" className="hover:text-white ease-in-out duration-100" target="_blank">
                   Automation App
                 </Link>
               </li>
@@ -156,7 +156,7 @@ const Footer = () => {
                 <Link
                   href="https://www.instagram.com/poptale_artz/"
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                 >
                   Instagram
                 </Link>
@@ -165,7 +165,7 @@ const Footer = () => {
                 <Link
                   href="https://x.com/pratik04jha"
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                 >
                   Twitter (X)
                 </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
                 <Link
                   href="https://www.linkedin.com/in/pratik-jha-380037301/"
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                 >
                   LinkedIn
                 </Link>
@@ -183,7 +183,7 @@ const Footer = () => {
                 <Link
                   href="https://github.com/Pratik04Jha"
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                 >
                   GitHub
                 </Link>
@@ -192,7 +192,7 @@ const Footer = () => {
                 <Link
                   href="https://www.facebook.com/profile.php?id=61574732885384"
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                 >
                   Facebook
                 </Link>
@@ -201,7 +201,7 @@ const Footer = () => {
                 <Link
                   href="https://www.quora.com/profile/Pratik-1703"
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:text-white ease-in-out duration-100"
                 >
                   Quora
                 </Link>

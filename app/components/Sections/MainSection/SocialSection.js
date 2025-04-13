@@ -46,7 +46,7 @@ const SocialSection = () => {
   return (
     <>
       <div className="flex flex-col items-center my-40 gap-5 px-4 sm:px-10 relative">
-        <div className="bg-pink-500/70 blur-[140px] h-50 w-50 rounded-full rotate-20 absolute -top-[00%] z-0 left-[10%] -translate-1/2" />
+        {/* <div className="bg-pink-500/70 blur-[180px] h-50 w-50 rounded-full rotate-20 absolute -top-[00%] z-0 left-[10%] -translate-1/2" /> */}
         <svg
           className="absolute inset-0 -top-50 w-full h-full opacity-100 -z-1"
           xmlns="http://www.w3.org/2000/svg"
