@@ -3,6 +3,7 @@ import Navbar from "./components/Sections/Navbar";
 import SessionWrapper from "./components/SessionWrapper";
 import "./globals.css";
 import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Zenius",
@@ -57,6 +58,16 @@ export default function RootLayout({ children }) {
       <SessionWrapper>
         <body className="bg-black text-white" suppressHydrationWarning>
           <Navbar />
+          <Toaster
+            position="bottom-right"
+            reverseOrder={false}
+            toastOptions={{
+              style: {
+                background: "#1a1a1a",
+                color: "#fff",
+              },
+            }}
+          />
           {children}
           <Footer />
         </body>

@@ -9,6 +9,7 @@ import {
   FaQuora,
 } from "react-icons/fa";
 import SocialIcons from "@/app/components/UserInterface/SocialIcons";
+import toast from "react-hot-toast";
 
 const page = () => {
   const data = [
@@ -34,9 +35,9 @@ const page = () => {
 
     const result = await res.json();
     if (result.success) {
-      alert("Email sent 🎉");
+      toast.success("Email sent successfully");
     } else {
-      alert("Email failed 😢");
+      toast.error("Something went wrong");
     }
   };
 

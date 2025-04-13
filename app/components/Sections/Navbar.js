@@ -28,7 +28,7 @@ const Navbar = () => {
               <Link
                 key={index}
                 href={item.href}
-                className="hover:bg-zinc-900/90 py-1 px-3 rounded-lg"
+                className="hover:bg-zinc-800 py-1 px-3 rounded-lg ease-in-out duration-200"
               >
                 {item.title}
               </Link>
@@ -38,13 +38,13 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-2">
           <Link href="/Links/SignUp">
-            <button className="bg-black rounded-lg py-1 cursor-pointer px-4 text-white border border-white/20 font-semibold text-sm md:text-base">
+            <button className="bg-black hover:bg-zinc-900 ease-in-out duration-200 rounded-lg py-1 cursor-pointer px-4 text-white border border-white/20 font-semibold text-sm md:text-base">
               Log in
             </button>
           </Link>
 
           <Link href="/Links/SignUp">
-            <button className="bg-white rounded-lg py-1 px-4 cursor-pointer text-black font-semibold text-sm md:text-base">
+            <button className="bg-white hover:bg-white/90 ease-in-out duration-200 rounded-lg py-1 px-4 cursor-pointer text-black font-semibold text-sm md:text-base">
               Sign up
             </button>
           </Link>
