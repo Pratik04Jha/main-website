@@ -1,5 +1,6 @@
 import Footer from "./components/Sections/Footer";
 import Navbar from "./components/Sections/Navbar";
+import SessionWrapper from "./components/SessionWrapper";
 import "./globals.css";
 import Head from "next/head";
 
@@ -53,11 +54,13 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="/icon.png" />
         <link rel="shortcut icon" href="/xlogo.png" />
       </Head>
-      <body className="bg-black text-white" suppressHydrationWarning>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <SessionWrapper>
+        <body className="bg-black text-white" suppressHydrationWarning>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </SessionWrapper>
     </html>
   );
 }

@@ -37,12 +37,17 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-2">
-          <button className="bg-black rounded-lg py-1 px-4 text-white border border-white/20 font-semibold text-sm md:text-base">
-            Log in
-          </button>
-          <button className="bg-white rounded-lg py-1 px-4 text-black font-semibold text-sm md:text-base">
-            Sign up
-          </button>
+          <Link href="/Links/SignUp">
+            <button className="bg-black rounded-lg py-1 cursor-pointer px-4 text-white border border-white/20 font-semibold text-sm md:text-base">
+              Log in
+            </button>
+          </Link>
+
+          <Link href="/Links/SignUp">
+            <button className="bg-white rounded-lg py-1 px-4 cursor-pointer text-black font-semibold text-sm md:text-base">
+              Sign up
+            </button>
+          </Link>
         </div>
 
         <button
@@ -65,14 +70,17 @@ const Navbar = () => {
               {item}
             </Link>
           ))}
-
-          <div className="flex flex-col items-center gap-3 mt-4">
-            <button className="bg-black rounded-lg py-1 px-4 text-white border border-white/20 font-semibold text-sm">
-              Log in
-            </button>
-            <button className="bg-white rounded-lg py-1 px-4 text-black font-semibold text-sm">
-              Sign up
-            </button>
+          <div className="flex flex-col items-center gap-3 mt-4 ">
+            <Link href="/Links/SignUp">
+              <button className="bg-black rounded-lg py-1 px-4 text-white border cursor-pointer border-white/20 font-semibold text-sm">
+                Log in
+              </button>
+            </Link>
+            <Link href="/Links/SignUp">
+              <button className="bg-white rounded-lg py-1 px-4 text-black font-semibold text-sm cursor-pointer">
+                Sign up
+              </button>
+            </Link>
           </div>
         </div>
       )}
