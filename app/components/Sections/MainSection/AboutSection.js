@@ -6,7 +6,7 @@ const AboutSection = () => {
       <h1 className="text-6xl font-bold text-center w-[70%] sm:w-full">
         <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
           Learn
-        </span>{" "}
+        </span>
         about me
       </h1>
       <p className="sm:w-1/2 text-center w-[80%]">

@@ -1,7 +1,9 @@
-import React from "react";
-
+"use client";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
 const LandingPage = () => {
-  
+  const constraintsRef = useRef(null);
+
   return (
     <div className="relative flex justify-center items-center flex-col h-screen overflow-hidden bg-black text-white px-4 sm:px-6 md:px-12">
       {/* Grid SVG Background */}
@@ -36,9 +38,16 @@ const LandingPage = () => {
       </svg>
 
       <div className="relative z-10 text-center flex flex-col items-center">
-        <h1 className="masked text-4xl sm:text-5xl md:text-7xl font-bold">
-          Zenius
-        </h1>
+        <motion.div ref={constraintsRef}>
+          <motion.h1
+            drag
+            dragConstraints={constraintsRef} whileFocus={{ scale: 1.2 }}
+            className="masked text-4xl sm:text-5xl md:text-7xl font-bold"
+          >
+            Zenius
+          </motion.h1>
+        </motion.div>
+
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold py-4">
           Your complete platform for all your needs
         </h1>
@@ -73,8 +82,6 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };

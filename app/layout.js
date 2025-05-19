@@ -6,9 +6,9 @@ import Head from "next/head";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "Zenius",
+  title: "Inceptix | Custom Software Solutions for Modern Businesses",
   description:
-    "Zenius provides all the tools that you need on your day to day life, whether its productivity, automation, AI assistence or anything else. Built by the visionary Pratik Jha.",
+    "Inceptix provides all the tools that you need on your day to day life, whether its productivity, automation, AI assistence or anything else. Built by the visionary Pratik Jha.",
   icons: { icon: "/xlogo.png" },
 };
 
@@ -22,20 +22,20 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="description"
-          content="Welcome to ZeniusVerse – An all-in-one AI universe powered by Zenius. Experience the smartest chatbot, text-to-image, text-to-video, quote generator, and image enhancer in one powerful app. Built by the visionary Pratik Jha."
+          content="Welcome to Inceptix – An all-in-one AI universe powered by Inceptix. Experience the smartest chatbot, text-to-image, text-to-video, quote generator, and image enhancer in one powerful app. Built by the visionary Pratik Jha."
         />
         <meta
           name="keywords"
-          content="AI chatbot, ZeniusVerse, AI tools, text to image, text to video, quote generator, image enhancer, Zenius, AI website, Next.js AI app, Pratik Jha"
+          content="AI chatbot, Inceptix, AI tools, text to image, text to video, quote generator, image enhancer, Inceptix, AI website, Next.js AI app, Pratik Jha"
         />
         <meta name="author" content="Pratik Jha" />
         <meta
           property="og:title"
-          content="ZeniusVerse – The Ultimate AI Universe"
+          content="Inceptix – The Ultimate AI Universe"
         />
         <meta
           property="og:description"
-          content="All-in-one AI platform built by Pratik Jha. Chatbot, text to image/video, quote maker, image enhancer – all powered by Zenius."
+          content="All-in-one AI platform built by Pratik Jha. Chatbot, text to image/video, quote maker, image enhancer – all powered by Inceptix."
         />
         <meta property="og:image" content="/icon.png" />
         <meta
@@ -46,11 +46,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="ZeniusVerse – The Ultimate AI Universe"
+          content="Inceptix – The Ultimate AI Universe"
         />
         <meta
           name="twitter:description"
-          content="Explore ZeniusVerse – the smartest all-in-one AI experience. Created by Pratik Jha."
+          content="Explore Inceptix – the smartest all-in-one AI experience. Created by Pratik Jha."
         />
         <meta name="twitter:image" content="/icon.png" />
         <link rel="shortcut icon" href="/xlogo.png" />
