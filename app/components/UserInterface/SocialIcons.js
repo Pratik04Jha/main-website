@@ -30,6 +30,8 @@ const SocialIcons = ({ data }) => {
         className="text-2xl text-white hover:scale-110 transition-transform duration-300 ease-in-out"
       >
         {data.icon}
+        
+              
       </Link>
     </div>
   );

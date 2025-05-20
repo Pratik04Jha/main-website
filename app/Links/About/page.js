@@ -97,6 +97,7 @@ const page = () => {
           {social.map((items, index) => (
             <SocialButtons key={index} social={items} />
           ))}
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="pratik-jha-380037301" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/pratik-jha-380037301?trk=profile-badge"></a></div>
         </div>
       </div>
     </>
